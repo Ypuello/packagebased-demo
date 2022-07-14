@@ -86,17 +86,7 @@ jobs:
 workflows:
   package-based:
     jobs:
-      - developer
-      - quality:
-          requires:
-            - developer
-      - quality-deploy:
-          requires:
-            - quality
+      quality-deploy
       - github-master:
           requires:
             - quality-deploy
-          filters:
-            branches:
-              only:
-                - feature-branch
