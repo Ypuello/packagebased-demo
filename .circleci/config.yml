@@ -86,7 +86,7 @@ jobs:
 workflows:
   package-based:
     jobs:
-      quality-deploy
+      - quality-deploy
       - github-master:
           requires:
             - quality-deploy
