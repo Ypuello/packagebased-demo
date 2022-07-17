@@ -70,7 +70,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "2a:b2:40:77:ae:a2:e0:ec:55:91:ab:99:a3:5e:1b:84"
+            - "29:46:c3:02:78:01:8d:36:6f:84:66:b6:b8:11:3f:f7"
       - run:
           name: Install Dependencies
           command: . build/install_dependencies.sh
@@ -86,7 +86,8 @@ jobs:
 workflows:
   package-based:
     jobs:
-      - quality-deploy
       - github-master:
-          requires:
-            - quality-deploy
+          filters:
+            branches:
+              only:
+                - master
