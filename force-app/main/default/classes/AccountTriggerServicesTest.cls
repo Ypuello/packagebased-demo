@@ -1,7 +1,6 @@
 @isTest
 public class AccountTriggerServicesTest {
     
-    
     @isTest
     static void updateDescriptionBeforeInsertTest(){
         
@@ -16,8 +15,7 @@ public class AccountTriggerServicesTest {
         List<Account> acc = [SELECT Id FROM Account];
         system.assertEquals(1, acc.size());
         
-        
-        
+ 
     }
 
 }
