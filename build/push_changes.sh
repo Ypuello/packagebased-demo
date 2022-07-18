@@ -1,3 +1,3 @@
 # Push changes
 
-git push https://github.com/Ypuello/packagebased-demo.git developer:master
+git push origin feature-branch:master
