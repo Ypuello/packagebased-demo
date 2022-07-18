@@ -86,8 +86,4 @@ jobs:
 workflows:
   package-based:
     jobs:
-      - github-master:
-          filters:
-            branches:
-              only:
-                - feature-branch
+      - github-master
