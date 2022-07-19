@@ -3,7 +3,7 @@
     <fullName>Career__c</fullName>
     <externalId>false</externalId>
     <label>Career</label>
-    <length>30</length>
+    <length>22</length>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>
