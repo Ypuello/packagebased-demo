@@ -94,7 +94,7 @@ workflows:
       - quality:
           requires:
             - developer
-      - quality-deply:
+      - quality-deploy:
           requires:
             - quality
       - github-master:
