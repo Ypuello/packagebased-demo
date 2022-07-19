@@ -1,3 +1,4 @@
 # Push changes
 
-git push https://github.com/Ypuello/packagebased-demo.git feature-branch:master
+git commit -m "initial commit"
+git push https://github.com/Ypuello/packagebased-demo.git master
